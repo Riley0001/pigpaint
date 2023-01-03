@@ -1,0 +1,49 @@
+local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
+
+local Window = Rayfield:CreateWindow({
+	Name = "❄️ BIG Paintball! 🔫 - dvixded.tk",
+	LoadingTitle = "️ BIG Paintball! 🔫 - dvixded.tk",
+	LoadingSubtitle = "By rmg#3285",
+	ConfigurationSaving = {
+		Enabled = true,
+		FolderName = "dvixded.tk", -- Create a custom folder for your hub/game
+		FileName = "dvixdedtkBigPaintb"
+	},
+        Discord = {
+        	Enabled = true,
+        	Invite = "be7vu6GGWS", -- The Discord invite code, do not include discord.gg/
+        	RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+        },
+	KeySystem = false, -- Set this to true to use our key system
+	KeySettings = {
+		Title = "Sirius Hub",
+		Subtitle = "Key System",
+		Note = "Join the discord (discord.gg/sirius)",
+		FileName = "SiriusKey",
+		SaveKey = true,
+		GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+		Key = "Hello"
+	}
+})
+local Aimbot = Window:CreateTab("Aimbot", 12007061440)
+
+local Button = Aimbot:CreateButton({
+	Name = "Silent Aim And Wallbang",
+	Callback = function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/Riley0001/bigpaintball/main/main'))()
+	end,
+})
+
+local Visuals = Window:CreateTab("Visuals", 12007058778)
+
+local Button = Visuals:CreateButton({
+	Name = "Glow ESP",
+	Callback = function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/Riley0001/chamssx/main/Main'))()
+	end,
+})
+
+local Credits = Window:CreateTab("Credits", 12007065798)
+
+local Paragraph = Credits:CreateParagraph({Title = "Owner", Content = "rmg#3285"})
+local Paragraph = Credits:CreateParagraph({Title = "About The Script", Content = "Everything Was Made By Me Apart From The ESP That Was Taken From A Youtube Video"})
